@@ -3,10 +3,10 @@ import { useCallback } from "react";
 import { BsPatchPlus } from "react-icons/bs";
 
 const SidebarPostButton = () => {
-	const loginModal = useLoginModal();
+
 	const onClick = useCallback(() => {
 	alert('Create a post or log in')
-	}, [loginModal]);
+	}, []);
 
 	return (
 		<div onClick={onClick}>
